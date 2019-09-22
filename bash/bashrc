@@ -10,3 +10,6 @@ PS1='[\u@\h \W]\$ '
 
 # Firefox won't run without this for now
 export MOZ_ENABLE_WAYLAND=1
+
+# QT5 wayland support
+export QT_QPA_PLATFORM=wayland-egl

@@ -16,6 +16,7 @@ mkdir --parents $HOME/.config/waybar
 # BASH
 echo "Creating bash-related symlinks..."
 ln --force --symbolic "$BASEDIR/bash/bashrc" "$HOME/.bashrc"
+ln --force --symbolic "$BASEDIR/bash/bash_profile" "$HOME/.bash_profile"
 
 # VIM
 echo "Creating vim-related symlink..."
@@ -28,6 +29,7 @@ ln --force --symbolic "$BASEDIR/sway/config" "$HOME/.config/sway/config"
 # WAYBAR
 echo "Creating waybar-related symlinks..."
 ln --force --symbolic "$BASEDIR/waybar/config" "$HOME/.config/waybar/config"
+ln --force --symbolic "$BASEDIR/waybar/style.css" "$HOME/.config/waybar/style.css"
 
 # TERMITE
 echo "Creating termite-related symlinks..."
