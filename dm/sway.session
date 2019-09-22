@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Sway
+Comment=Log in using the Sway window manager
+Exec=/usr/bin/sway
+TryExec=/usr/bin/sway
+Type=Application

@@ -1,0 +1,11 @@
+[Unit]
+Description=Pacman mirror list update
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/generate_mirrorlist.sh
+
+[Install]
+RequiredBy=multi-user.target
