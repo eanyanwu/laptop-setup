@@ -42,6 +42,10 @@ set $menu bemenu-run -p 'SEARCH:' \
        middle_emulation enabled
     }
 
+## Output Configuration
+
+output eDP-1 bg /home/eze/Images/Wallpapers/wallpaper0.png fit #ffffff
+
 ### Key bindings
 # Basics:
 #
@@ -103,13 +107,21 @@ set $menu bemenu-run -p 'SEARCH:' \
     bindsym $mod+Shift+0 move container to workspace 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+
+# 
+# Mouse controls
 #
+    floating_modifier $mod normal
 # Layout stuff:
 #
-    default_border pixel 5 
+    for_window [app_id="termite"] opacity set 0.95
+
+    gaps inner 8
+
+    default_border pixel 2
 
     # Colorize!
-    client.focused $orange $orange $black $white $orange
+    client.focused $white $white $black $orange $white
     client.unfocused $grey $grey $white $darkergrey $grey
 
 
@@ -143,10 +155,6 @@ set $menu bemenu-run -p 'SEARCH:' \
 # Brightness buttons
     bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
-
-# Keyboard brightness
-    bindsym $mod+Down exec kb-light.py - 1
-    bindsym $mod+Up exec kb-light.py + 1 
 
 # Sound buttons
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%

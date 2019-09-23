@@ -12,6 +12,7 @@ echo "BASEDIR=$BASEDIR"
 mkdir --parents $HOME/.config/sway
 mkdir --parents $HOME/.config/termite
 mkdir --parents $HOME/.config/waybar
+mkdir --parents $HOME/Images/Wallpapers
 
 # BASH
 echo "Creating bash-related symlinks..."
@@ -25,6 +26,7 @@ ln --force --symbolic "$BASEDIR/vim/vimrc" "$HOME/.vimrc"
 # SWAY
 echo "Creating sway-related symlinks..."
 ln --force --symbolic "$BASEDIR/sway/config" "$HOME/.config/sway/config"
+ln --force --symbolic "$BASEDIR/sway/wallpaper0.png" "$HOME/Images/Wallpapers/wallpaper0.png"
 
 # WAYBAR
 echo "Creating waybar-related symlinks..."

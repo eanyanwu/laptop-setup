@@ -1,14 +1,14 @@
 {
     "layer": "bottom", // Waybar at top layer
-    "height": 40, // Waybar height (to be removed for auto height)
+    "height": 50, // Waybar height (to be removed for auto height)
 
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "custom/media"],
+    "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
     "modules-right": [ "network", "battery", "clock", "tray"],
+
     // Modules configuration
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
