@@ -46,8 +46,3 @@ ln --force --symbolic "$BASEDIR/termite/config" "$HOME/.config/termite/config"
 echo "Creating reflector-related symlinks..."
 sudo ln --force --symbolic "$BASEDIR/reflector/generate_mirrorlist.sh" "/usr/local/bin/generate_mirrorlist.sh"
 sudo ln --force --symbolic "$BASEDIR/reflector/generate_mirrorlist.service" "/etc/systemd/system/generate_mirrorlist.service"
-
-
-# PASS
-echo "Creating pass-related symlinks..."
-sudo ln --force --symbolic "$BASEDIR/pass/passmenu.fish" "/usr/local/bin/passmenu.fish"
