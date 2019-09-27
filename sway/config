@@ -52,9 +52,6 @@ output eDP-1 bg /home/eze/Images/Wallpapers/wallpaper0.png fit #ffffff
     # start a terminal
     bindsym $mod+Return exec $term
 
-    # start the interwebs browser
-    bindsym $mod+i exec firefox
-
     # kill focused window
     bindsym $mod+Shift+q kill
 
