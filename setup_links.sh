@@ -38,6 +38,11 @@ echo "Creating termite-related symlinks..."
 ln --force --symbolic "$BASEDIR/termite/config" "$HOME/.config/termite/config"
 
 # PACMAN MIRROR LIST 
-echo "Creating reflector-related symlinks. You may be prompted for a password to sudo..."
+echo "Creating reflector-related symlinks..."
 sudo ln --force --symbolic "$BASEDIR/reflector/generate_mirrorlist.sh" "/usr/local/bin/generate_mirrorlist.sh"
 sudo ln --force --symbolic "$BASEDIR/reflector/generate_mirrorlist.service" "/etc/systemd/system/generate_mirrorlist.service"
+
+
+# PASS
+echo "Creating pass-related symlinks..."
+sudo ln --force --symbolic "$BASEDIR/pass/passmenu.sh" "/usr/local/bin/passmenu.sh"
