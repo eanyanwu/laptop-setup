@@ -12,12 +12,17 @@ echo "BASEDIR=$BASEDIR"
 mkdir --parents $HOME/.config/sway
 mkdir --parents $HOME/.config/termite
 mkdir --parents $HOME/.config/waybar
+mkdir --parents $HOME/.config/fish
 mkdir --parents $HOME/Images/Wallpapers
 
 # BASH
 echo "Creating bash-related symlinks..."
 ln --force --symbolic "$BASEDIR/bash/bashrc" "$HOME/.bashrc"
 ln --force --symbolic "$BASEDIR/bash/bash_profile" "$HOME/.bash_profile"
+
+# FISH
+echo "Creating fish-related-symlinks..."
+ln --force --symbolic "$BASEDIR/fish/config.fish" "$HOME/.config/fish/config.fish"
 
 # VIM
 echo "Creating vim-related symlink..."
@@ -45,4 +50,4 @@ sudo ln --force --symbolic "$BASEDIR/reflector/generate_mirrorlist.service" "/et
 
 # PASS
 echo "Creating pass-related symlinks..."
-sudo ln --force --symbolic "$BASEDIR/pass/passmenu.sh" "/usr/local/bin/passmenu.sh"
+sudo ln --force --symbolic "$BASEDIR/pass/passmenu.fish" "/usr/local/bin/passmenu.fish"
