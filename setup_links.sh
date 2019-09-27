@@ -23,6 +23,7 @@ ln --force --symbolic "$BASEDIR/bash/bash_profile" "$HOME/.bash_profile"
 # FISH
 echo "Creating fish-related-symlinks..."
 ln --force --symbolic "$BASEDIR/fish/config.fish" "$HOME/.config/fish/config.fish"
+ln --force --symbolic "$BASEDIR/fish/functions" "$HOME/.config/fish/functions"
 
 # VIM
 echo "Creating vim-related symlink..."
