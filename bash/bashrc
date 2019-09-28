@@ -25,6 +25,3 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # Add the dotnet SDK to the path
 export PATH="${PATH}:$HOME/.dotnet/tools"
-
-# Start the fish shell
-exec fish

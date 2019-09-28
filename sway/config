@@ -20,7 +20,7 @@ set $grey #333333
 set $darkergrey #292d2e
 
 # Your preferred terminal emulator
-set $term termite
+set $term termite --exec=fish
 
 # Your preferred application launcher
 set $menu bemenu-run -p 'SEARCH:' \
