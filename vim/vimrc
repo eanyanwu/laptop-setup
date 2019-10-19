@@ -125,3 +125,9 @@ augroup END
 " Status Line Settings
 set noshowmode
 
+
+" Plugins
+
+call plug#begin('~/.vim/plugged')
+Plug 'rust-lang/rust.vim'
+call plug#end()

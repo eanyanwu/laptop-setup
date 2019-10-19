@@ -13,6 +13,7 @@ mkdir --parents $HOME/.config/sway
 mkdir --parents $HOME/.config/termite
 mkdir --parents $HOME/.config/waybar
 mkdir --parents $HOME/.config/fish
+mkdir --parents $HOME/.vim/autoload
 mkdir --parents $HOME/Images/Wallpapers
 
 # BASH
@@ -28,6 +29,7 @@ ln --force --symbolic "$BASEDIR/fish/functions" "$HOME/.config/fish/functions"
 # VIM
 echo "Creating vim-related symlink..."
 ln --force --symbolic "$BASEDIR/vim/vimrc" "$HOME/.vimrc"
+ln --force --symbolic "$BASEDIR/vim/plug.vim" "$HOME/.vim/autoload/plug.vim"
 
 # SWAY
 echo "Creating sway-related symlinks..."

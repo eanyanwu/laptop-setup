@@ -20,8 +20,14 @@ export MOZ_ENABLE_WAYLAND=1
 # QT5 wayland support
 export QT_QPA_PLATFORM=wayland-egl
 
+# GDK Wayland support
+export GDK_BACKEND=wayland
+
 # Disable telemetry in the dotnet sdk.
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # Add the dotnet SDK to the path
 export PATH="${PATH}:$HOME/.dotnet/tools"
+
+# Add cargo to the path
+export PATH="${PATH}:$HOME/.cargo/bin"
