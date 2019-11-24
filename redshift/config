@@ -1,0 +1,4 @@
+[redshift]
+temp-day=45000
+temp-night=3000
+fade=1

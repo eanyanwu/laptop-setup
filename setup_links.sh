@@ -14,7 +14,9 @@ mkdir --parents $HOME/.config/termite
 mkdir --parents $HOME/.config/waybar
 mkdir --parents $HOME/.config/fish
 mkdir --parents $HOME/.vim/autoload
+mkdir --parents $HOME/.gnupg
 mkdir --parents $HOME/Images/Wallpapers
+mkdir --parents $HOME/.config/redshift
 
 # BASH
 echo "Creating bash-related symlinks..."
@@ -34,6 +36,7 @@ ln --force --symbolic "$BASEDIR/vim/plug.vim" "$HOME/.vim/autoload/plug.vim"
 # SWAY
 echo "Creating sway-related symlinks..."
 ln --force --symbolic "$BASEDIR/sway/config" "$HOME/.config/sway/config"
+sudo ln --force --symbolic "$BASEDIR/sway/passmenu.sh" "/usr/local/bin/passmenu.sh"
 ln --force --symbolic "$BASEDIR/sway/wallpaper0.png" "$HOME/Images/Wallpapers/wallpaper0.png"
 
 # WAYBAR
@@ -44,6 +47,14 @@ ln --force --symbolic "$BASEDIR/waybar/style.css" "$HOME/.config/waybar/style.cs
 # TERMITE
 echo "Creating termite-related symlinks..."
 ln --force --symbolic "$BASEDIR/termite/config" "$HOME/.config/termite/config"
+
+# REDSHIFT
+echo "Creating redshift-related symlinks..."
+ln --force --symbolic "$BASEDIR/redshift/config.conf" "$HOME/.config/redshift/config"
+
+# GPG
+echo "Creating gpg-related symlinks..."
+ln --force --symbolic "$BASEDIR/gpg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
 
 # PACMAN MIRROR LIST 
 echo "Creating reflector-related symlinks..."

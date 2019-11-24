@@ -61,6 +61,9 @@ bindswitch lid:off output eDP-1 enable
     # start your launcher
     bindsym $mod+d exec $menu
 
+    # start the pass word manager menu
+    bindsym $mod+p exec passmenu.sh
+
     # reload the configuration file
     bindsym $mod+Shift+c reload
 
@@ -112,6 +115,7 @@ bindswitch lid:off output eDP-1 enable
 # Mouse controls
 #
     floating_modifier $mod normal
+    
 # Layout stuff:
 #
     for_window [app_id="termite"] opacity set 0.95
@@ -169,8 +173,6 @@ bindswitch lid:off output eDP-1 enable
 bar {
     swaybar_command waybar
 }
-
-xwayland disable
 
 
 include /etc/sway/config.d/*
