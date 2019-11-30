@@ -50,7 +50,7 @@ ln --force --symbolic "$BASEDIR/termite/config" "$HOME/.config/termite/config"
 
 # REDSHIFT
 echo "Creating redshift-related symlinks..."
-ln --force --symbolic "$BASEDIR/redshift/config.conf" "$HOME/.config/redshift/config"
+ln --force --symbolic "$BASEDIR/redshift/redshift.conf" "$HOME/.config/redshift/redshift.conf"
 
 # GPG
 echo "Creating gpg-related symlinks..."

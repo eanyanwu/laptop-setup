@@ -1,3 +1,3 @@
 function ll
-    ls -al --color=auto
+    exa -la
 end
