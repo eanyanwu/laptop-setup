@@ -37,6 +37,7 @@ ln --force --symbolic "$BASEDIR/vim/plug.vim" "$HOME/.vim/autoload/plug.vim"
 echo "Creating sway-related symlinks..."
 ln --force --symbolic "$BASEDIR/sway/config" "$HOME/.config/sway/config"
 sudo ln --force --symbolic "$BASEDIR/sway/passmenu.sh" "/usr/local/bin/passmenu.sh"
+sudo ln --force --symbolic "$BASEDIR/sway/ezbar-swaywm" "/usr/local/bin/ezbar"
 ln --force --symbolic "$BASEDIR/sway/wallpaper0.png" "$HOME/Images/Wallpapers/wallpaper0.png"
 
 # WAYBAR

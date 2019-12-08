@@ -79,6 +79,9 @@ bindsym $mod+w output $monitor toggle
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 # Moving around:
+    
+    # Toggle floating window
+    bindsym $mod+a floating toggle
 
     # Move your focus around
     bindsym $mod+$left focus left
@@ -124,7 +127,8 @@ bindsym $mod+w output $monitor toggle
     
 # Layout stuff:
 #
-    #for_window [app_id="termite"] opacity set 0.95
+    for_window [app_id="termite"] opacity set 0.95
+    for_window [app_id="qemu"] floating enable
 
     default_border pixel 1
 
@@ -162,7 +166,18 @@ bindsym $mod+w output $monitor toggle
 bar {
     position top
 
-    font pango:Noto Sans Display 14
+    status_command  ezbar
+
+    font pango:Iosevka 14
+
+    status_padding 5
+
+    separator_symbol "//"
+
+    colors {
+        background #FFFFFF00
+        separator #FFFFFF
+    }
 }
 
 
