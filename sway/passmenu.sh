@@ -36,3 +36,7 @@ password=$(echo $contents | awk -F " username:" '{ print $1 }')
 username=$(echo $contents | awk -F " username:" '{ print $2 }')
 
 echo "$password" | wl-copy --trim-newline
+
+sleep 10
+
+wl-copy --clear
