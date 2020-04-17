@@ -1,5 +1,3 @@
-#!/usr/bin/sh
-
 # We will need to refer to files within the directory where this script exists.
 # This is one way to do that.
 SCRIPT_PATH=$(readlink -f $0)
@@ -15,7 +13,7 @@ mkdir --parents $HOME/.config/waybar
 mkdir --parents $HOME/.config/fish
 mkdir --parents $HOME/.vim/autoload
 mkdir --parents $HOME/.gnupg
-mkdir --parents $HOME/Images/Wallpapers
+mkdir --parents $HOME/images/wallpapers
 mkdir --parents $HOME/.config/redshift
 
 # BASH
@@ -36,9 +34,7 @@ ln --force --symbolic "$BASEDIR/vim/plug.vim" "$HOME/.vim/autoload/plug.vim"
 # SWAY
 echo "Creating sway-related symlinks..."
 ln --force --symbolic "$BASEDIR/sway/config" "$HOME/.config/sway/config"
-sudo ln --force --symbolic "$BASEDIR/sway/passmenu.sh" "/usr/local/bin/passmenu.sh"
-sudo ln --force --symbolic "$BASEDIR/sway/ezbar-swaywm" "/usr/local/bin/ezbar"
-ln --force --symbolic "$BASEDIR/sway/wallpaper0.png" "$HOME/Images/Wallpapers/wallpaper0.png"
+ln --force --symbolic "$BASEDIR/sway/wallpaper0.png" "$HOME/images/wallpapers/wallpaper0.png"
 
 # WAYBAR
 echo "Creating waybar-related symlinks..."
@@ -56,8 +52,3 @@ ln --force --symbolic "$BASEDIR/redshift/redshift.conf" "$HOME/.config/redshift/
 # GPG
 echo "Creating gpg-related symlinks..."
 ln --force --symbolic "$BASEDIR/gpg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
-
-# PACMAN MIRROR LIST 
-echo "Creating reflector-related symlinks..."
-sudo ln --force --symbolic "$BASEDIR/reflector/generate_mirrorlist.sh" "/usr/local/bin/generate_mirrorlist.sh"
-sudo ln --force --symbolic "$BASEDIR/reflector/generate_mirrorlist.service" "/etc/systemd/system/generate_mirrorlist.service"

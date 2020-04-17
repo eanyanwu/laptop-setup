@@ -1,0 +1,710 @@
+2020-04-17 04:31:49 - [sway/main.c:152] Linux cow-0 4.19.115 #1-NixOS SMP Mon Apr 13 08:45:17 UTC 2020 x86_64 GNU/Linux
+2020-04-17 04:31:49 - [sway/main.c:168] Contents of /etc/os-release:
+2020-04-17 04:31:49 - [sway/main.c:152] NAME=NixOS
+2020-04-17 04:31:49 - [sway/main.c:152] ID=nixos
+2020-04-17 04:31:49 - [sway/main.c:152] VERSION="19.09.2405.f6c1d3b113c (Loris)"
+2020-04-17 04:31:49 - [sway/main.c:152] VERSION_CODENAME=loris
+2020-04-17 04:31:49 - [sway/main.c:152] VERSION_ID="19.09.2405.f6c1d3b113c"
+2020-04-17 04:31:49 - [sway/main.c:152] PRETTY_NAME="NixOS 19.09.2405.f6c1d3b113c (Loris)"
+2020-04-17 04:31:49 - [sway/main.c:152] LOGO="nix-snowflake"
+2020-04-17 04:31:49 - [sway/main.c:152] HOME_URL="https://nixos.org/"
+2020-04-17 04:31:49 - [sway/main.c:152] DOCUMENTATION_URL="https://nixos.org/nixos/manual/index.html"
+2020-04-17 04:31:49 - [sway/main.c:152] SUPPORT_URL="https://nixos.org/nixos/support.html"
+2020-04-17 04:31:49 - [sway/main.c:152] BUG_REPORT_URL="https://github.com/NixOS/nixpkgs/issues"
+2020-04-17 04:31:49 - [sway/main.c:140] LD_LIBRARY_PATH=(null)
+2020-04-17 04:31:49 - [sway/main.c:140] LD_PRELOAD=(null)
+2020-04-17 04:31:49 - [sway/main.c:140] PATH=/nix/store/bl6irzfhzp122dlmlgl9lzvq4dnzx22f-swaybg-1.0/bin:/home/user0/bin:/run/wrappers/bin:/home/user0/.nix-profile/bin:/etc/profiles/per-user/user0/bin:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin:/home/user0/.dotnet/tools:/home/user0/.cargo/bin
+2020-04-17 04:31:49 - [sway/main.c:140] SWAYSOCK=(null)
+2020-04-17 04:31:49 - [sway/server.c:39] Preparing Wayland server initialization
+2020-04-17 04:31:49 - [backend/session/logind.c:675] Successfully loaded logind session
+2020-04-17 04:31:49 - [backend/backend.c:192] Found 1 GPUs
+2020-04-17 04:31:49 - [backend/drm/backend.c:152] Initializing DRM backend for /dev/dri/card0 (i915)
+2020-04-17 04:31:49 - [backend/drm/drm.c:69] Using atomic DRM interface
+2020-04-17 04:31:49 - [backend/drm/drm.c:254] Found 3 DRM CRTCs
+2020-04-17 04:31:49 - [backend/drm/drm.c:175] Found 9 DRM planes
+2020-04-17 04:31:49 - [render/egl.c:172] Using EGL 1.4
+2020-04-17 04:31:49 - [render/egl.c:173] Supported EGL extensions: EGL_ANDROID_blob_cache EGL_ANDROID_native_fence_sync EGL_EXT_buffer_age EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_IMG_context_priority EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_WL_bind_wayland_display 
+2020-04-17 04:31:49 - [render/egl.c:174] EGL vendor: Mesa Project
+2020-04-17 04:31:49 - [render/egl.c:117] Supported dmabuf buffer formats: AR30 XR30 AB30 XB30 AR24 AB24 XR24 XB24 AR15 RG16 R8   R16  GR88 GR32 YUV9 YU11 YU12 YU16 YU24 YVU9 YV11 YV12 YV16 YV24 NV12 P010 P012 P016 NV16 AYUV XYUV YUYV UYVY 
+2020-04-17 04:31:49 - [render/egl.c:240] Failed to obtain a high priority context
+2020-04-17 04:31:49 - [render/gles2/renderer.c:546] Using OpenGL ES 3.2 Mesa 19.1.5
+2020-04-17 04:31:49 - [render/gles2/renderer.c:547] GL vendor: Intel Open Source Technology Center
+2020-04-17 04:31:49 - [render/gles2/renderer.c:548] GL renderer: Mesa DRI Intel(R) HD Graphics 520 (Skylake GT2) 
+2020-04-17 04:31:49 - [render/gles2/renderer.c:549] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_OES_viewport_array GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_robustness GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_framebuffer_fetch GL_EXT_shader_implicit_conversions GL_EXT_shader_integer_mix GL_EXT_tessellation_point_size GL_EXT_tessellation_shader GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_ANDROID_extension_pack_es31a GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_gpu_shader5 GL_EXT_polygon_offset_clamp GL_EXT_primitive_bounding_box GL_EXT_render_snorm GL_EXT_shader_io_blocks GL_EXT_texture_border_clamp GL_EXT_texture_buffer GL_EXT_texture_cube_map_array GL_EXT_texture_norm16 GL_EXT_texture_view GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_robust_buffer_access_behavior GL_NV_image_formats GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_gpu_shader5 GL_OES_primitive_bounding_box GL_OES_sample_shading GL_OES_sample_variables GL_OES_shader_io_blocks GL_OES_shader_multisample_interpolation GL_OES_tessellation_point_size GL_OES_tessellation_shader GL_OES_texture_border_clamp GL_OES_texture_buffer GL_OES_texture_cube_map_array GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_texture_view GL_EXT_blend_func_extended GL_EXT_buffer_storage GL_EXT_float_blend GL_EXT_geometry_point_size GL_EXT_geometry_shader GL_EXT_shader_samples_identical GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_NV_fragment_shader_interlock GL_OES_EGL_image_external_essl3 GL_OES_geometry_point_size GL_OES_geometry_shader GL_OES_shader_image_atomic GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_texture_compression_bptc GL_KHR_parallel_shader_compile GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_texture_sRGB_R8 GL_MESA_framebuffer_flip_y GL_NV_compute_shader_derivatives GL_EXT_depth_clamp GL_EXT_texture_query_lod 
+2020-04-17 04:31:49 - [backend/noop/backend.c:51] Creating noop backend
+2020-04-17 04:31:49 - [sway/main.c:363] Starting sway version 1.2
+2020-04-17 04:31:49 - [sway/server.c:53] Initializing Wayland server
+2020-04-17 04:31:49 - [types/wlr_idle.c:258] idle manager created
+2020-04-17 04:31:49 - [types/wlr_idle_inhibit_v1.c:191] idle_inhibit manager created
+2020-04-17 04:31:49 - [types/wlr_relative_pointer_v1.c:228] relative_pointer_v1 manager created
+2020-04-17 04:31:49 - [sway/config.c:393] Loading config from /home/user0/.config/sway/config
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 1: ### Variables
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 2: #
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 3: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 4: set $mod Mod4
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $mod Mod4
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $mod Mod4
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 5: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 6: # Home row direction keys, like vim
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 7: set $left j
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $left j
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $left j
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 8: set $down k
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $down k
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $down k
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 9: set $up l
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $up l
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $up l
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 10: set $right semicolon
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $right semicolon
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $right semicolon
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 11: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 12: # Colors
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 13: set $black #202020
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $black #202020
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $black #202020
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 14: set $purple #8789C0
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $purple #8789C0
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $purple #8789C0
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 15: set $orange #EB5E28
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $orange #EB5E28
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $orange #EB5E28
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 16: set $white #DBD3D8
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $white #DBD3D8
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $white #DBD3D8
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 17: set $blue #7CC6FE
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $blue #7CC6FE
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $blue #7CC6FE
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 18: set $green #5DFDCB
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $green #5DFDCB
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $green #5DFDCB
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 19: set $grey #333333
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $grey #333333
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $grey #333333
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 20: set $darkergrey #292d2e
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $darkergrey #292d2e
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $darkergrey #292d2e
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 21: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 22: # Your preferred terminal emulator
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 23: set $term termite --exec=fish
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $term termite --exec=fish
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $term termite --exec=fish
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 24: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 25: # Output variables
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 26: set $laptop eDP-1
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $laptop eDP-1
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $laptop eDP-1
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 27: set $monitor 'Ancor Communications Inc VX229 D7LMRS016581'
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $monitor 'Ancor Communications Inc VX229 D7LMRS016581'
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $monitor 'Ancor Communications Inc VX229 D7LMRS016581'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 28: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 29: # Your preferred application launcher
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 39: set $menu bemenu-run -p 'SEARCH:' --list 10 --fn 'Fira Mono 13' --tf '#fa44fa' --tb '#323232' --fb '#323232' --nb '#323232' --hf '#ffffff' --hb '#8789c0' | xargs swaymsg exec
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: set $menu bemenu-run -p 'SEARCH:' --list 10 --fn 'Fira Mono 13' --tf '#fa44fa' --tb '#323232' --fb '#323232' --nb '#323232' --hf '#ffffff' --hb '#8789c0' | xargs swaymsg exec
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: set $menu bemenu-run -p 'SEARCH:' --list 10 --fn 'Fira Mono 13' --tf '#fa44fa' --tb '#323232' --fb '#323232' --nb '#323232' --hf '#ffffff' --hb '#8789c0' | xargs swaymsg exec
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 40: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 41: ### Input Configuration
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 42:     input "2:7:SynPS/2_Synaptics_TouchPad" {
+2020-04-17 04:31:49 - [sway/config.c:842] Entering block 'input "2:7:SynPS/2_Synaptics_TouchPad"'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 43:        dwt enabled
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: input "2:7:SynPS/2_Synaptics_TouchPad" dwt enabled
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: input "2:7:SynPS/2_Synaptics_TouchPad" dwt enabled
+2020-04-17 04:31:49 - [sway/commands/input.c:69] entering input block: 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:49 - [sway/config/input.c:15] new_input_config(2:7:SynPS/2_Synaptics_TouchPad)
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: dwt enabled
+2020-04-17 04:31:49 - [sway/config/input.c:15] new_input_config(temp)
+2020-04-17 04:31:49 - [sway/config/input.c:299] Config stored for input 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 44:        tap enabled
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: input "2:7:SynPS/2_Synaptics_TouchPad" tap enabled
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: input "2:7:SynPS/2_Synaptics_TouchPad" tap enabled
+2020-04-17 04:31:49 - [sway/commands/input.c:69] entering input block: 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:49 - [sway/config/input.c:15] new_input_config(2:7:SynPS/2_Synaptics_TouchPad)
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: tap enabled
+2020-04-17 04:31:49 - [sway/config/input.c:15] new_input_config(temp)
+2020-04-17 04:31:49 - [sway/config/input.c:299] Config stored for input 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 45:        natural_scroll enabled
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: input "2:7:SynPS/2_Synaptics_TouchPad" natural_scroll enabled
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: input "2:7:SynPS/2_Synaptics_TouchPad" natural_scroll enabled
+2020-04-17 04:31:49 - [sway/commands/input.c:69] entering input block: 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:49 - [sway/config/input.c:15] new_input_config(2:7:SynPS/2_Synaptics_TouchPad)
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: natural_scroll enabled
+2020-04-17 04:31:49 - [sway/config/input.c:15] new_input_config(temp)
+2020-04-17 04:31:49 - [sway/config/input.c:299] Config stored for input 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 46:        middle_emulation enabled
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: input "2:7:SynPS/2_Synaptics_TouchPad" middle_emulation enabled
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: input "2:7:SynPS/2_Synaptics_TouchPad" middle_emulation enabled
+2020-04-17 04:31:49 - [sway/commands/input.c:69] entering input block: 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:49 - [sway/config/input.c:15] new_input_config(2:7:SynPS/2_Synaptics_TouchPad)
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: middle_emulation enabled
+2020-04-17 04:31:49 - [sway/config/input.c:15] new_input_config(temp)
+2020-04-17 04:31:49 - [sway/config/input.c:299] Config stored for input 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 47:     }
+2020-04-17 04:31:49 - [sway/config.c:859] Exiting block 'input "2:7:SynPS/2_Synaptics_TouchPad"'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 48: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 49: ## Output Configuration
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 50: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 51: output * bg ~/images/wallpapers/wallpaper0.png fit #ffffff
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: output * bg ~/images/wallpapers/wallpaper0.png fit #ffffff
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: output * bg ~/images/wallpapers/wallpaper0.png fit #ffffff
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: bg ~/images/wallpapers/wallpaper0.png fit #ffffff
+2020-04-17 04:31:49 - [sway/config/output.c:191] Adding output * config
+2020-04-17 04:31:49 - [sway/config/output.c:199] Config stored for output * (enabled: -1) (-1x-1@-1.000000Hz position -1,-1 scale -1.000000 subpixel unknown transform -1) (bg /home/user0/images/wallpapers/wallpaper0.png fit) (dpms 0)
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[0] = swaybg
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[1] = -o
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[2] = *
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[3] = -i
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[4] = /home/user0/images/wallpapers/wallpaper0.png
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[5] = -m
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[6] = fit
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[7] = -c
+2020-04-17 04:31:49 - [sway/config/output.c:614] spawn_swaybg cmd[8] = #ffffff
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 52: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 53: output $laptop pos 0 0
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: output $laptop pos 0 0
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: output eDP-1 pos 0 0
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: pos 0 0
+2020-04-17 04:31:49 - [sway/config/output.c:178] Adding non-wildcard output config
+2020-04-17 04:31:49 - [sway/config/output.c:181] Merging on top of output * config
+2020-04-17 04:31:49 - [sway/config/output.c:199] Config stored for output eDP-1 (enabled: -1) (-1x-1@-1.000000Hz position 0,0 scale -1.000000 subpixel unknown transform -1) (bg /home/user0/images/wallpapers/wallpaper0.png fit) (dpms 0)
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 54: output $monitor pos 1920 0
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: output $monitor pos 1920 0
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: output 'Ancor Communications Inc VX229 D7LMRS016581' pos 1920 0
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: pos 1920 0
+2020-04-17 04:31:49 - [sway/config/output.c:178] Adding non-wildcard output config
+2020-04-17 04:31:49 - [sway/config/output.c:181] Merging on top of output * config
+2020-04-17 04:31:49 - [sway/config/output.c:199] Config stored for output Ancor Communications Inc VX229 D7LMRS016581 (enabled: -1) (-1x-1@-1.000000Hz position 1920,0 scale -1.000000 subpixel unknown transform -1) (bg /home/user0/images/wallpapers/wallpaper0.png fit) (dpms 0)
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 55: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 56: bindsym $mod+q output $laptop toggle
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+q output $laptop toggle
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+q output eDP-1 toggle
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+q to command `output eDP-1 toggle` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 57: bindsym $mod+w output $monitor toggle
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+w output $monitor toggle
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+w output 'Ancor Communications Inc VX229 D7LMRS016581' toggle
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+w to command `output 'Ancor Communications Inc VX229 D7LMRS016581' toggle` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 58: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 59: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 60: ### Key bindings
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 61: # Basics:
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 62: #
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 63:     # start a terminal
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 64:     bindsym $mod+Return exec $term
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Return exec $term
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Return exec termite --exec=fish
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Return to command `exec termite --exec=fish` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 65: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 66:     # kill focused window
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 67:     bindsym $mod+Shift+q kill
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+q kill
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+q kill
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+q to command `kill` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 68: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 69:     # start your launcher
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 70:     bindsym $mod+d exec $menu
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+d exec $menu
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+d exec bemenu-run -p 'SEARCH:' --list 10 --fn 'Fira Mono 13' --tf '#fa44fa' --tb '#323232' --fb '#323232' --nb '#323232' --hf '#ffffff' --hb '#8789c0' | xargs swaymsg exec
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+d to command `exec bemenu-run -p 'SEARCH:' --list 10 --fn 'Fira Mono 13' --tf '#fa44fa' --tb '#323232' --fb '#323232' --nb '#323232' --hf '#ffffff' --hb '#8789c0' | xargs swaymsg exec` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 71: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 72:     # start the pass word manager menu
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 73:     bindsym $mod+s exec passmenu.sh
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+s exec passmenu.sh
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+s exec passmenu.sh
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+s to command `exec passmenu.sh` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 74: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 75:     # reload the configuration file
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 76:     bindsym $mod+Shift+c reload
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+c reload
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+c reload
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+c to command `reload` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 77: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 78:     # exit sway (logs you out of your Wayland session)
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 79:     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+e to command `exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 80: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 81: # Moving around:
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 82:     
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 83:     # Toggle floating window
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 84:     bindsym $mod+a floating toggle
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+a floating toggle
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+a floating toggle
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+a to command `floating toggle` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 85: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 86:     # Move your focus around
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 87:     bindsym $mod+$left focus left
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+$left focus left
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+j focus left
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+j to command `focus left` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 88:     bindsym $mod+$down focus down
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+$down focus down
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+k focus down
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+k to command `focus down` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 89:     bindsym $mod+$up focus up
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+$up focus up
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+l focus up
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+l to command `focus up` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 90:     bindsym $mod+$right focus right
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+$right focus right
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+semicolon focus right
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+semicolon to command `focus right` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 91: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 92:     # Move the focused window with the same, but add Shift
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 93:     bindsym $mod+Shift+$left move left
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+$left move left
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+j move left
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+j to command `move left` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 94:     bindsym $mod+Shift+$down move down
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+$down move down
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+k move down
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+k to command `move down` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 95:     bindsym $mod+Shift+$up move up
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+$up move up
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+l move up
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+l to command `move up` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 96:     bindsym $mod+Shift+$right move right
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+$right move right
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+semicolon move right
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+semicolon to command `move right` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 97: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 98: # Workspaces:
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 99: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 100:     # switch to workspace
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 101:     bindsym $mod+1 workspace 1
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+1 workspace 1
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+1 workspace 1
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+1 to command `workspace 1` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 102:     bindsym $mod+2 workspace 2
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+2 workspace 2
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+2 workspace 2
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+2 to command `workspace 2` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 103:     bindsym $mod+3 workspace 3
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+3 workspace 3
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+3 workspace 3
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+3 to command `workspace 3` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 104:     bindsym $mod+4 workspace 4
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+4 workspace 4
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+4 workspace 4
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+4 to command `workspace 4` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 105:     bindsym $mod+5 workspace 5
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+5 workspace 5
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+5 workspace 5
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+5 to command `workspace 5` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 106:     bindsym $mod+6 workspace 6
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+6 workspace 6
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+6 workspace 6
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+6 to command `workspace 6` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 107:     bindsym $mod+7 workspace 7
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+7 workspace 7
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+7 workspace 7
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+7 to command `workspace 7` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 108:     bindsym $mod+8 workspace 8
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+8 workspace 8
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+8 workspace 8
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+8 to command `workspace 8` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 109:     bindsym $mod+9 workspace 9
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+9 workspace 9
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+9 workspace 9
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+9 to command `workspace 9` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 110:     bindsym $mod+0 workspace 10
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+0 workspace 10
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+0 workspace 10
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+0 to command `workspace 10` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 111: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 112:     # move focused container to workspace
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 113:     bindsym $mod+Shift+1 move container to workspace 1
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+1 move container to workspace 1
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+1 move container to workspace 1
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+1 to command `move container to workspace 1` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 114:     bindsym $mod+Shift+2 move container to workspace 2
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+2 move container to workspace 2
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+2 move container to workspace 2
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+2 to command `move container to workspace 2` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 115:     bindsym $mod+Shift+3 move container to workspace 3
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+3 move container to workspace 3
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+3 move container to workspace 3
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+3 to command `move container to workspace 3` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 116:     bindsym $mod+Shift+4 move container to workspace 4
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+4 move container to workspace 4
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+4 move container to workspace 4
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+4 to command `move container to workspace 4` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 117:     bindsym $mod+Shift+5 move container to workspace 5
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+5 move container to workspace 5
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+5 move container to workspace 5
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+5 to command `move container to workspace 5` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 118:     bindsym $mod+Shift+6 move container to workspace 6
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+6 move container to workspace 6
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+6 move container to workspace 6
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+6 to command `move container to workspace 6` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 119:     bindsym $mod+Shift+7 move container to workspace 7
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+7 move container to workspace 7
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+7 move container to workspace 7
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+7 to command `move container to workspace 7` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 120:     bindsym $mod+Shift+8 move container to workspace 8
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+8 move container to workspace 8
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+8 move container to workspace 8
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+8 to command `move container to workspace 8` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 121:     bindsym $mod+Shift+9 move container to workspace 9
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+9 move container to workspace 9
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+9 move container to workspace 9
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+9 to command `move container to workspace 9` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 122:     bindsym $mod+Shift+0 move container to workspace 10
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+Shift+0 move container to workspace 10
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+Shift+0 move container to workspace 10
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+Shift+0 to command `move container to workspace 10` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 123: # 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 124: # Mouse controls
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 125: #
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 126:     floating_modifier $mod normal
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: floating_modifier $mod normal
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: floating_modifier Mod4 normal
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 127:     
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 128: # Layout stuff:
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 129: #
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 130:     for_window [app_id="termite"] opacity set 0.95
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: for_window [app_id="termite"] opacity set 0.95
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: for_window [app_id="termite"] opacity set 0.95
+2020-04-17 04:31:49 - [sway/criteria.c:654] Found pair: app_id=termite
+2020-04-17 04:31:49 - [sway/commands/for_window.c:34] for_window: '[app_id="termite"]' -> 'opacity set 0.95' added
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 131:     for_window [app_id="qemu"] floating enable
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: for_window [app_id="qemu"] floating enable
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: for_window [app_id="qemu"] floating enable
+2020-04-17 04:31:49 - [sway/criteria.c:654] Found pair: app_id=qemu
+2020-04-17 04:31:49 - [sway/commands/for_window.c:34] for_window: '[app_id="qemu"]' -> 'floating enable' added
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 132: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 133:     default_border pixel 1
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: default_border pixel 1
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: default_border pixel 1
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 134: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 135:     # Colorize!
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 136:     client.focused $white $white $black $orange $white
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: client.focused $white $white $black $orange $white
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: client.focused #DBD3D8 #DBD3D8 #202020 #EB5E28 #DBD3D8
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 137:     client.unfocused $grey $grey $white $darkergrey $grey
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: client.unfocused $grey $grey $white $darkergrey $grey
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: client.unfocused #333333 #333333 #DBD3D8 #292d2e #333333
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 138: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 139: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 140:     # You can "split" the current object of your focus with
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 141:     # $mod+b or $mod+v, for horizontal and vertical splits
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 142:     # respectively.
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 143:     bindsym $mod+h splith
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+h splith
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+h splith
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+h to command `splith` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 144:     bindsym $mod+g splitv
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+g splitv
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+g splitv
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+g to command `splitv` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 145: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 146:     # Make the current focus fullscreen
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 147:     bindsym $mod+f fullscreen
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym $mod+f fullscreen
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym Mod4+f fullscreen
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound Mod4+f to command `fullscreen` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 148: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 149: ## Custom Keybindings
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 150: #
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 151: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 152: # Brightness buttons
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 153:     bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound XF86MonBrightnessDown to command `exec brightnessctl set 5%-` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 154:     bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound XF86MonBrightnessUp to command `exec brightnessctl set 5%+` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 155: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 156: # Sound buttons
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 157:     bindsym XF86AudioRaiseVolume exec 'amixer set Master 3+ unmute' 
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym XF86AudioRaiseVolume exec 'amixer set Master 3+ unmute'
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym XF86AudioRaiseVolume exec 'amixer set Master 3+ unmute'
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound XF86AudioRaiseVolume to command `exec 'amixer set Master 3+ unmute'` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 158:     bindsym XF86AudioLowerVolume exec 'amixer set Master 3- unmute' 
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym XF86AudioLowerVolume exec 'amixer set Master 3- unmute'
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym XF86AudioLowerVolume exec 'amixer set Master 3- unmute'
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound XF86AudioLowerVolume to command `exec 'amixer set Master 3- unmute'` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 159:     bindsym XF86AudioMute exec 'amixer set Master toggle' 
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bindsym XF86AudioMute exec 'amixer set Master toggle'
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bindsym XF86AudioMute exec 'amixer set Master toggle'
+2020-04-17 04:31:49 - [sway/commands/bind.c:297] bindsym - Bound XF86AudioMute to command `exec 'amixer set Master toggle'` for device '*'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 160: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 161: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 162: #
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 163: # Status Bar:
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 164: #
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 165: # Read `man 5 sway-bar` for more information about this section.
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 166: bar {
+2020-04-17 04:31:49 - [sway/config.c:842] Entering block 'bar'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 167:     position top
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bar position top
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bar position top
+2020-04-17 04:31:49 - [sway/commands/bar.c:113] Creating bar bar-0
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: position top
+2020-04-17 04:31:49 - [sway/commands/bar/position.c:16] Setting bar position 'top' for bar: bar-0
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 168: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 169:     status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bar status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bar status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+2020-04-17 04:31:49 - [sway/commands/bar/status_command.c:18] Feeding bar with status command: while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 170: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 171:     font pango:Iosevka 14
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bar font pango:Iosevka 14
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bar font pango:Iosevka 14
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: font pango:Iosevka 14
+2020-04-17 04:31:49 - [sway/commands/bar/font.c:16] Settings font 'pango:Iosevka 14' for bar: bar-0
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 172: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 173:     status_padding 5
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bar status_padding 5
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bar status_padding 5
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: status_padding 5
+2020-04-17 04:31:49 - [sway/commands/bar/status_padding.c:19] Status padding on bar bar-0: 5
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 174: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 175:     separator_symbol "//"
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bar separator_symbol "//"
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bar separator_symbol "//"
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: separator_symbol //
+2020-04-17 04:31:49 - [sway/commands/bar/separator_symbol.c:14] Settings separator_symbol '//' for bar: bar-0
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 176: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 177:     colors {
+2020-04-17 04:31:49 - [sway/config.c:842] Entering block 'bar colors'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 178:         background #FFFFFF00
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bar colors background #FFFFFF00
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bar colors background #FFFFFF00
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: colors background #FFFFFF00
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: background #FFFFFF00
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 179:         separator #FFFFFF
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: bar colors separator #FFFFFF
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: bar colors separator #FFFFFF
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: colors separator #FFFFFF
+2020-04-17 04:31:49 - [sway/commands.c:418] Subcommand: separator #FFFFFF
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 180:     }
+2020-04-17 04:31:49 - [sway/config.c:859] Exiting block 'bar colors'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 181: }
+2020-04-17 04:31:49 - [sway/config.c:859] Exiting block 'bar'
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 182: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 183: 
+2020-04-17 04:31:49 - [sway/config.c:788] Read line 184: include /etc/sway/config.d/*
+2020-04-17 04:31:49 - [sway/commands.c:367] Config command: include /etc/sway/config.d/*
+2020-04-17 04:31:49 - [sway/commands.c:387] After replacement: include /etc/sway/config.d/*
+2020-04-17 04:31:49 - [sway/config.c:572] /etc/sway/config.d/* not found.
+2020-04-17 04:31:49 - [sway/server.c:176] Initializing Xwayland
+2020-04-17 04:31:49 - [sway/server.c:193] Starting backend on wayland display 'wayland-0'
+2020-04-17 04:31:49 - [backend/drm/drm.c:1161] Scanning DRM connectors
+2020-04-17 04:31:49 - [backend/drm/drm.c:1224] Found connector 'eDP-1'
+2020-04-17 04:31:49 - [backend/drm/drm.c:1260] 'eDP-1' connected
+2020-04-17 04:31:49 - [backend/drm/drm.c:1262] Current CRTC: 41
+2020-04-17 04:31:49 - [backend/drm/drm.c:1267] Physical size: 310x170
+2020-04-17 04:31:49 - [backend/drm/drm.c:1278] Detected modes:
+2020-04-17 04:31:49 - [backend/drm/drm.c:1302]   1920x1080@60020
+2020-04-17 04:31:49 - [backend/drm/drm.c:1302]   1920x1080@47999
+2020-04-17 04:31:49 - [backend/drm/drm.c:1224] Found connector 'DP-1'
+2020-04-17 04:31:50 - [backend/drm/drm.c:1224] Found connector 'HDMI-A-1'
+2020-04-17 04:31:50 - [backend/drm/drm.c:1224] Found connector 'DP-2'
+2020-04-17 04:31:50 - [backend/drm/drm.c:1224] Found connector 'HDMI-A-2'
+2020-04-17 04:31:50 - [backend/drm/drm.c:991] Reallocating CRTCs
+2020-04-17 04:31:50 - [backend/drm/drm.c:1002] State before reallocation:
+2020-04-17 04:31:50 - [backend/drm/drm.c:1011]   'eDP-1' crtc=0 state=1 desired_enabled=1
+2020-04-17 04:31:50 - [backend/drm/drm.c:1011]   'DP-1' crtc=-1 state=0 desired_enabled=0
+2020-04-17 04:31:50 - [backend/drm/drm.c:1011]   'HDMI-A-1' crtc=-1 state=0 desired_enabled=0
+2020-04-17 04:31:50 - [backend/drm/drm.c:1011]   'DP-2' crtc=-1 state=0 desired_enabled=0
+2020-04-17 04:31:50 - [backend/drm/drm.c:1011]   'HDMI-A-2' crtc=-1 state=0 desired_enabled=0
+2020-04-17 04:31:50 - [backend/drm/drm.c:1060] State after reallocation:
+2020-04-17 04:31:50 - [backend/drm/drm.c:1070]   'eDP-1' crtc=0 state=1 desired_enabled=1
+2020-04-17 04:31:50 - [backend/drm/drm.c:1070]   'DP-1' crtc=-1 state=0 desired_enabled=0
+2020-04-17 04:31:50 - [backend/drm/drm.c:1070]   'HDMI-A-1' crtc=-1 state=0 desired_enabled=0
+2020-04-17 04:31:50 - [backend/drm/drm.c:1070]   'DP-2' crtc=-1 state=0 desired_enabled=0
+2020-04-17 04:31:50 - [backend/drm/drm.c:1070]   'HDMI-A-2' crtc=-1 state=0 desired_enabled=0
+2020-04-17 04:31:50 - [backend/drm/drm.c:1355] Requesting modeset for 'eDP-1'
+2020-04-17 04:31:50 - [sway/desktop/output.c:686] New output 0x8e5ed0: eDP-1
+2020-04-17 04:31:50 - [backend/drm/drm.c:595] Modesetting 'eDP-1' with '1920x1080@60020 mHz'
+2020-04-17 04:31:50 - [backend/drm/drm.c:503] Starting renderer on output 'eDP-1'
+2020-04-17 04:31:50 - [GLES2] FS SIMD8 shader: 5 inst, 0 loops, 24 cycles, 0:0 spills:fills, Promoted 0 constants, compacted 80 to 48 bytes.
+2020-04-17 04:31:50 - [GLES2] FS SIMD16 shader: 5 inst, 0 loops, 34 cycles, 0:0 spills:fills, Promoted 0 constants, compacted 80 to 48 bytes.
+2020-04-17 04:31:50 - [GLES2] VS SIMD8 shader: 28 inst, 0 loops, 116 cycles, 0:0 spills:fills, Promoted 0 constants, compacted 448 to 336 bytes.
+2020-04-17 04:31:50 - [GLES2] FS SIMD16 shader: 2 inst, 0 loops, 0 cycles, 0:0 spills:fills, Promoted 0 constants, compacted 32 to 32 bytes.
+2020-04-17 04:31:50 - [sway/config/output.c:302] Set eDP-1 position to 0, 0
+2020-04-17 04:31:50 - [sway/tree/workspace.c:284] Workspace: Generating new workspace name for output eDP-1
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '1'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:274] Workspace: Found free name 1
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '2'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '3'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '4'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '5'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '6'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '7'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '8'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '9'
+2020-04-17 04:31:50 - [sway/tree/workspace.c:219] Got valid workspace command for target: '10'
+2020-04-17 04:31:50 - [sway/tree/output.c:132] Creating default workspace 1
+2020-04-17 04:31:50 - [sway/tree/workspace.c:64] Adding workspace 1 for output eDP-1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:244] Loaded cursor theme 'default', available cursors:
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] bottom_left_corner (1 images) 16x16+1,14
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] bottom_right_corner (1 images) 16x16+14,14
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] bottom_side (1 images) 15x16+7,14
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] grabbing (1 images) 16x16+8,8
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] left_ptr (1 images) 10x16+1,1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] left_side (1 images) 16x15+1,7
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] right_side (1 images) 16x15+14,7
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] top_left_corner (1 images) 16x16+1,1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] top_right_corner (1 images) 16x16+14,1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] top_side (1 images) 15x16+7,1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] xterm (1 images) 9x16+4,8
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] hand1 (1 images) 13x16+12,0
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] watch (1 images) 16x16+15,9
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:244] Loaded cursor theme 'default', available cursors:
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] bottom_left_corner (1 images) 16x16+1,14
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] bottom_right_corner (1 images) 16x16+14,14
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] bottom_side (1 images) 15x16+7,14
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] grabbing (1 images) 16x16+8,8
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] left_ptr (1 images) 10x16+1,1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] left_side (1 images) 16x15+1,7
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] right_side (1 images) 16x15+14,7
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] top_left_corner (1 images) 16x16+1,1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] top_right_corner (1 images) 16x16+14,1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] top_side (1 images) 15x16+7,1
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] xterm (1 images) 9x16+4,8
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] hand1 (1 images) 13x16+12,0
+2020-04-17 04:31:50 - [xcursor/wlr_xcursor.c:250] watch (1 images) 16x16+15,9
+2020-04-17 04:31:50 - [sway/desktop/layer_shell.c:178] Usable area changed, rearranging output
+2020-04-17 04:31:50 - [sway/tree/arrange.c:262] Usable area for ws: 1920x1080@0,0
+2020-04-17 04:31:50 - [sway/tree/arrange.c:292] Arranging workspace '1' at 0.000000, 0.000000
+2020-04-17 04:31:50 - [sway/tree/arrange.c:262] Usable area for ws: 1920x1080@0,0
+2020-04-17 04:31:50 - [sway/tree/arrange.c:292] Arranging workspace '1' at 0.000000, 0.000000
+2020-04-17 04:31:50 - [sway/desktop/transaction.c:412] Transaction 0x8caa00 committing with 2 instructions
+2020-04-17 04:31:50 - [sway/desktop/transaction.c:280] Applying transaction 0x8caa00
+2020-04-17 04:31:50 - [backend/libinput/backend.c:55] Initializing libinput
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added Power Button [0:1]
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '0:1:Power_Button'
+2020-04-17 04:31:50 - [sway/input/input-manager.c:165] no fallback seat config - creating default
+2020-04-17 04:31:50 - [sway/config/seat.c:60] Adding non-wildcard seat config
+2020-04-17 04:31:50 - [sway/config/seat.c:77] Config stored for seat seat0
+2020-04-17 04:31:50 - [sway/input/input-manager.c:398] applying seat config for seat seat0
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 0:1:Power_Button to seat seat0
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added Video Bus [0:6]
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '0:6:Video_Bus'
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 0:6:Video_Bus to seat seat0
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added Lid Switch [0:5]
+2020-04-17 04:31:50 - [backend/libinput/switch.c:20] Created switch for device Lid Switch
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '0:5:Lid_Switch'
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 0:5:Lid_Switch to seat seat0
+2020-04-17 04:31:50 - [sway/input/switch.c:18] Allocated switch for device
+2020-04-17 04:31:50 - [sway/input/switch.c:95] Configured switch for device
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added Sleep Button [0:3]
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '0:3:Sleep_Button'
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 0:3:Sleep_Button to seat seat0
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added Integrated Camera: Integrated C [1266:46507]
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '1266:46507:Integrated_Camera:_Integrated_C'
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 1266:46507:Integrated_Camera:_Integrated_C to seat seat0
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH Mic [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH Dock Mic [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH Dock Headphone [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH Headphone [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH HDMI/DP,pcm=3 [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH HDMI/DP,pcm=7 [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH HDMI/DP,pcm=8 [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH HDMI/DP,pcm=9 [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added HDA Intel PCH HDMI/DP,pcm=10 [0:0]
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added AT Translated Set 2 keyboard [1:1]
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '1:1:AT_Translated_Set_2_keyboard'
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 1:1:AT_Translated_Set_2_keyboard to seat seat0
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added SynPS/2 Synaptics TouchPad [2:7]
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '2:7:SynPS/2_Synaptics_TouchPad'
+2020-04-17 04:31:50 - [sway/input/libinput.c:191] config_libinput_pointer('2:7:SynPS/2_Synaptics_TouchPad' on  '2:7:SynPS/2_Synaptics_TouchPad')
+2020-04-17 04:31:50 - [sway/input/libinput.c:32] tap_set_enabled(1)
+2020-04-17 04:31:50 - [sway/input/libinput.c:96] scroll_set_natural_scroll(1)
+2020-04-17 04:31:50 - [sway/input/libinput.c:129] middle_emulation_set_enabled(1)
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 2:7:SynPS/2_Synaptics_TouchPad to seat seat0
+2020-04-17 04:31:50 - [sway/input/seat.c:568] Applying input config to 2:7:SynPS/2_Synaptics_TouchPad
+2020-04-17 04:31:50 - [GLES2] FS SIMD8 shader: 14 inst, 0 loops, 308 cycles, 0:0 spills:fills, Promoted 0 constants, compacted 224 to 176 bytes.
+2020-04-17 04:31:50 - [GLES2] FS SIMD16 shader: 14 inst, 0 loops, 322 cycles, 0:0 spills:fills, Promoted 0 constants, compacted 224 to 176 bytes.
+2020-04-17 04:31:50 - [GLES2] FS SIMD8 shader: 5 inst, 0 loops, 24 cycles, 0:0 spills:fills, Promoted 0 constants, compacted 80 to 64 bytes.
+2020-04-17 04:31:50 - [GLES2] FS SIMD16 shader: 5 inst, 0 loops, 34 cycles, 0:0 spills:fills, Promoted 0 constants, compacted 80 to 64 bytes.
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added TPPS/2 IBM TrackPoint [2:10]
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '2:10:TPPS/2_IBM_TrackPoint'
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 2:10:TPPS/2_IBM_TrackPoint to seat seat0
+2020-04-17 04:31:50 - [backend/libinput/events.c:94] Added ThinkPad Extra Buttons [6058:20564]
+2020-04-17 04:31:50 - [sway/input/input-manager.c:216] adding device: '6058:20564:ThinkPad_Extra_Buttons'
+2020-04-17 04:31:50 - [sway/input/seat.c:728] adding device 6058:20564:ThinkPad_Extra_Buttons to seat seat0
+2020-04-17 04:31:50 - [backend/libinput/backend.c:101] libinput successfully initialized
+2020-04-17 04:31:50 - [sway/config/bar.c:261] Invoking swaybar for bar id 'bar-0'
+2020-04-17 04:31:50 - [sway/config/bar.c:253] Spawned swaybar bar-0
+2020-04-17 04:31:50 - [sway/server.c:204] Running compositor on wayland display 'wayland-0'
+2020-04-17 04:31:50 - [main.c:300] Found config * for output eDP-1 (Unknown 0x0521 0x00000000)
+2020-04-17 04:31:50 - [types/wlr_surface.c:609] New wlr_surface 0xa86eb0 (res 0xa12c90)
+2020-04-17 04:31:50 - [types/wlr_layer_shell_v1.c:416] new layer_surface 0xa8be50 (res 0xa378b0)
+2020-04-17 04:31:50 - [sway/desktop/layer_shell.c:495] new layer surface: namespace wallpaper layer 0 anchor 0 size 0x0 margin 0,0,0,0
+2020-04-17 04:31:50 - [sway/ipc-server.c:154] Event on IPC listening socket
+2020-04-17 04:31:50 - [sway/ipc-server.c:200] New client: fd 57
+2020-04-17 04:31:50 - [sway/ipc-server.c:154] Event on IPC listening socket
+2020-04-17 04:31:50 - [sway/ipc-server.c:200] New client: fd 60
+2020-04-17 04:31:50 - [sway/ipc-server.c:220] Client 57 readable
+2020-04-17 04:31:50 - [sway/ipc-server.c:938] Added IPC reply of type 0x6 to client 57 queue: { "id": "bar-0", "mode": "dock", "hidden_state": "hide", "position": "top", "status_command": "while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done", "font": "pango:Iosevka 14", "gaps": { "top": 0, "right": 0, "bottom": 0, "left": 0 }, "separator_symbol": "\/\/", "bar_height": 0, "status_padding": 5, "status_edge_padding": 3, "wrap_scroll": false, "workspace_buttons": true, "strip_workspace_numbers": false, "strip_workspace_name": false, "binding_mode_indicator": true, "verbose": false, "pango_markup": false, "colors": { "background": "#FFFFFF00", "statusline": "#ffffffff", "separator": "#FFFFFFff", "focused_background": "#FFFFFF00", "focused_statusline": "#ffffffff", "focused_separator": "#FFFFFFff", "focused_workspace_border": "#4c7899ff", "focused_workspace_bg": "#285577ff", "focused_workspace_text": "#ffffffff", "inactive_workspace_border": "#333333ff", "inactive_workspace_bg": "#222222ff", "inactive_workspace_text": "#888888ff", "active_workspace_border": "#333333ff", "active_workspace_bg": "#5f676aff", "active_workspace_text": "#ffffffff", "urgent_workspace_border": "#2f343aff", "urgent_workspace_bg": "#900000ff", "urgent_workspace_text": "#ffffffff", "binding_mode_border": "#2f343aff", "binding_mode_bg": "#900000ff", "binding_mode_text": "#ffffffff" }, "tray_padding": 2 }
+2020-04-17 04:31:50 - [sway/ipc-server.c:524] Client 57 writable
+2020-04-17 04:31:50 - [sway/ipc-server.c:220] Client 57 readable
+2020-04-17 04:31:50 - [sway/ipc-server.c:938] Added IPC reply of type 0x3 to client 57 queue: [ { "id": 3, "name": "eDP-1", "rect": { "x": 0, "y": 0, "width": 1920, "height": 1080 }, "focus": [ 4 ], "border": "none", "current_border_width": 0, "layout": "output", "orientation": "none", "percent": 1.0, "window_rect": { "x": 0, "y": 0, "width": 0, "height": 0 }, "deco_rect": { "x": 0, "y": 0, "width": 0, "height": 0 }, "geometry": { "x": 0, "y": 0, "width": 0, "height": 0 }, "window": null, "urgent": false, "floating_nodes": [ ], "sticky": false, "type": "output", "active": true, "dpms": true, "primary": false, "make": "Unknown", "model": "0x0521", "serial": "0x00000000", "scale": 1.0, "transform": "normal", "current_workspace": "1", "modes": [ { "width": 1920, "height": 1080, "refresh": 47999 }, { "width": 1920, "height": 1080, "refresh": 60020 } ], "current_mode": { "width": 1920, "height": 1080, "refresh": 60020 }, "focused": true, "subpixel_hinting": "unknown" } ]
+2020-04-17 04:31:50 - [sway/ipc-server.c:524] Client 57 writable
+2020-04-17 04:31:50 - [sway/ipc-server.c:220] Client 60 readable
+2020-04-17 04:31:50 - [sway/ipc-server.c:938] Added IPC reply of type 0x2 to client 60 queue: {"success": true}
+2020-04-17 04:31:50 - [sway/ipc-server.c:524] Client 60 writable
+2020-04-17 04:31:50 - [swaybar/tray/tray.c:42] Failed to connect to user bus: No such file or directory
+2020-04-17 04:31:50 - [sway/ipc-server.c:220] Client 57 readable
+2020-04-17 04:31:50 - [sway/ipc-server.c:938] Added IPC reply of type 0x1 to client 57 queue: [ { "id": 4, "name": "1", "rect": { "x": 0, "y": 0, "width": 1920, "height": 1080 }, "focus": [ ], "border": "none", "current_border_width": 0, "layout": "splith", "orientation": "horizontal", "percent": null, "window_rect": { "x": 0, "y": 0, "width": 0, "height": 0 }, "deco_rect": { "x": 0, "y": 0, "width": 0, "height": 0 }, "geometry": { "x": 0, "y": 0, "width": 0, "height": 0 }, "window": null, "urgent": false, "floating_nodes": [ ], "sticky": false, "num": 1, "output": "eDP-1", "type": "workspace", "representation": null, "focused": true, "visible": true } ]
+2020-04-17 04:31:50 - [sway/ipc-server.c:524] Client 57 writable
+2020-04-17 04:31:50 - [types/wlr_surface.c:609] New wlr_surface 0xa841c0 (res 0xa565a0)
+2020-04-17 04:31:50 - [types/wlr_layer_shell_v1.c:416] new layer_surface 0xa844e0 (res 0xa5cad0)
+2020-04-17 04:31:50 - [sway/desktop/layer_shell.c:495] new layer surface: namespace panel layer 1 anchor 1 size 0x31 margin 0,0,0,0
+2020-04-17 04:31:50 - [sway/desktop/layer_shell.c:178] Usable area changed, rearranging output
+2020-04-17 04:31:50 - [sway/tree/arrange.c:262] Usable area for ws: 1920x1049@0,31
+2020-04-17 04:31:50 - [sway/tree/arrange.c:292] Arranging workspace '1' at 0.000000, 31.000000
+2020-04-17 04:31:50 - [sway/desktop/transaction.c:412] Transaction 0xa041b0 committing with 1 instructions
+2020-04-17 04:31:50 - [sway/desktop/transaction.c:280] Applying transaction 0xa041b0
+2020-04-17 04:31:50 - [types/wlr_surface.c:609] New wlr_surface 0xa8fdc0 (res 0xa63470)
+2020-04-17 04:31:50 - [sway/desktop/layer_shell.c:178] Usable area changed, rearranging output
+2020-04-17 04:31:50 - [sway/tree/arrange.c:262] Usable area for ws: 1920x1045@0,35
+2020-04-17 04:31:50 - [sway/tree/arrange.c:292] Arranging workspace '1' at 0.000000, 35.000000
+2020-04-17 04:31:50 - [sway/desktop/transaction.c:412] Transaction 0xa041b0 committing with 1 instructions
+2020-04-17 04:31:50 - [sway/desktop/transaction.c:280] Applying transaction 0xa041b0
+2020-04-17 04:31:51 - [sway/commands/bind.c:610] running command for binding: exec termite --exec=fish
+2020-04-17 04:31:51 - [sway/commands.c:250] Handling command 'exec termite --exec=fish'
+2020-04-17 04:31:51 - [sway/commands/exec_always.c:46] Executing termite --exec=fish
+2020-04-17 04:31:51 - [sway/commands/exec_always.c:87] Child process created with pid 2256
+2020-04-17 04:31:51 - [sway/tree/root.c:275] Recording workspace for process 2256
+2020-04-17 04:31:51 - [xwayland/xwayland.c:91] WAYLAND_SOCKET=22 Xwayland :0 -rootless -terminate -listen 19 -listen 21 -wm 65
+2020-04-17 04:31:51 - [xwayland/xwayland.c:110] failed to exec Xwayland: No such file or directory
+2020-04-17 04:31:51 - [xwayland/xwayland.c:350] sent SIGUSR1 to process 2243
+2020-04-17 04:31:51 - [xwayland/xwayland.c:225] Xwayland startup failed, not setting up xwm
+2020-04-17 04:31:53 - [sway/commands/bind.c:610] running command for binding: exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+2020-04-17 04:31:53 - [sway/commands.c:250] Handling command 'exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit''
+2020-04-17 04:31:53 - [sway/commands/exec_always.c:46] Executing swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+2020-04-17 04:31:53 - [sway/commands/exec_always.c:87] Child process created with pid 2264
+2020-04-17 04:31:53 - [sway/tree/root.c:275] Recording workspace for process 2264
+2020-04-17 04:31:53 - [types/wlr_surface.c:609] New wlr_surface 0xaac830 (res 0xa74800)
+2020-04-17 04:31:53 - [types/wlr_surface.c:609] New wlr_surface 0xaacb50 (res 0xa745c0)
+2020-04-17 04:31:53 - [types/wlr_layer_shell_v1.c:416] new layer_surface 0xa8d190 (res 0xa73c00)
+2020-04-17 04:31:53 - [sway/desktop/layer_shell.c:495] new layer surface: namespace swaynag layer 2 anchor 2 size 0x35 margin 0,0,0,0
+2020-04-17 04:31:53 - [sway/desktop/layer_shell.c:178] Usable area changed, rearranging output
+2020-04-17 04:31:53 - [sway/tree/arrange.c:262] Usable area for ws: 1920x1010@0,70
+2020-04-17 04:31:53 - [sway/tree/arrange.c:292] Arranging workspace '1' at 0.000000, 70.000000
+2020-04-17 04:31:53 - [sway/desktop/transaction.c:412] Transaction 0xa56f40 committing with 1 instructions
+2020-04-17 04:31:53 - [sway/desktop/transaction.c:280] Applying transaction 0xa56f40
+2020-04-17 04:31:53 - [sway/desktop/layer_shell.c:178] Usable area changed, rearranging output
+2020-04-17 04:31:53 - [sway/tree/arrange.c:262] Usable area for ws: 1920x1012@0,68
+2020-04-17 04:31:53 - [sway/tree/arrange.c:292] Arranging workspace '1' at 0.000000, 68.000000
+2020-04-17 04:31:53 - [sway/desktop/transaction.c:412] Transaction 0xa32460 committing with 1 instructions
+2020-04-17 04:31:53 - [sway/desktop/transaction.c:280] Applying transaction 0xa32460
+2020-04-17 04:31:54 - [types/seat/wlr_seat_pointer.c:364] button_count=1 grab_serial=0 serial=10
+2020-04-17 04:31:54 - [types/seat/wlr_seat_pointer.c:364] button_count=0 grab_serial=10 serial=11
+2020-04-17 04:31:55 - [types/seat/wlr_seat_pointer.c:364] button_count=1 grab_serial=10 serial=12
+2020-04-17 04:31:55 - [sway/ipc-server.c:154] Event on IPC listening socket
+2020-04-17 04:31:55 - [sway/ipc-server.c:200] New client: fd 65
+2020-04-17 04:31:55 - [sway/ipc-server.c:220] Client 65 readable
+2020-04-17 04:31:55 - [sway/commands.c:250] Handling command 'exit'
+2020-04-17 04:31:55 - [sway/ipc-server.c:938] Added IPC reply of type 0x0 to client 65 queue: [ { "success": true } ]
+2020-04-17 04:31:55 - [sway/main.c:403] Shutting down sway
+2020-04-17 04:31:55 - 2020-04-17 04:31:55 - [common/ipc-client.c:88] Unable to receive IPC response[common/ipc-client.c:88] Unable to receive IPC response
+
+option parsing failed: Cannot open display: 
+date: write error: Broken pipe

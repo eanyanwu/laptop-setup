@@ -48,7 +48,7 @@ set $menu bemenu-run -p 'SEARCH:' \
 
 ## Output Configuration
 
-output * bg /home/eze/Images/Wallpapers/wallpaper0.png fit #ffffff
+output * bg ~/images/wallpapers/wallpaper0.png fit #ffffff
 
 output $laptop pos 0 0
 output $monitor pos 1920 0
@@ -166,7 +166,7 @@ bindsym $mod+w output $monitor toggle
 bar {
     position top
 
-    status_command  ezbar
+    status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
 
     font pango:Iosevka 14
 
