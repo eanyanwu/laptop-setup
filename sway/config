@@ -38,6 +38,8 @@ set $menu bemenu-run -p 'SEARCH:' \
 --hb '#8789c0' \
 | xargs swaymsg exec
 
+set $passmenu ~/utils/passmenu.sh
+
 ### Input Configuration
     input "2:7:SynPS/2_Synaptics_TouchPad" {
        dwt enabled
@@ -70,7 +72,7 @@ bindsym $mod+w output $monitor toggle
     bindsym $mod+d exec $menu
 
     # start the pass word manager menu
-    bindsym $mod+s exec passmenu.sh
+    bindsym $mod+s exec $passmenu
 
     # reload the configuration file
     bindsym $mod+Shift+c reload

@@ -6,15 +6,15 @@ BASEDIR=$(dirname $SCRIPT_PATH)
 echo $BASEDIR
 echo "BASEDIR=$BASEDIR"
 
-# Create the directory structure we need
+# Create the directory structure i need
 mkdir --parents $HOME/.config/sway
 mkdir --parents $HOME/.config/termite
-mkdir --parents $HOME/.config/waybar
 mkdir --parents $HOME/.config/fish
 mkdir --parents $HOME/.vim/autoload
 mkdir --parents $HOME/.gnupg
 mkdir --parents $HOME/images/wallpapers
 mkdir --parents $HOME/.config/redshift
+mkdir --parents $HOME/utils
 
 # BASH
 echo "Creating bash-related symlinks..."
@@ -35,11 +35,7 @@ ln --force --symbolic "$BASEDIR/vim/plug.vim" "$HOME/.vim/autoload/plug.vim"
 echo "Creating sway-related symlinks..."
 ln --force --symbolic "$BASEDIR/sway/config" "$HOME/.config/sway/config"
 ln --force --symbolic "$BASEDIR/sway/wallpaper0.png" "$HOME/images/wallpapers/wallpaper0.png"
-
-# WAYBAR
-echo "Creating waybar-related symlinks..."
-ln --force --symbolic "$BASEDIR/waybar/config" "$HOME/.config/waybar/config"
-ln --force --symbolic "$BASEDIR/waybar/style.css" "$HOME/.config/waybar/style.css"
+ln --force --symbolic "$BASEDIR/sway/passmenu.sh" "$HOME/utils/passmenu.sh"
 
 # TERMITE
 echo "Creating termite-related symlinks..."
