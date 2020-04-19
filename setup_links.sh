@@ -14,6 +14,7 @@ mkdir --parents $HOME/.vim/autoload
 mkdir --parents $HOME/.gnupg
 mkdir --parents $HOME/images/wallpapers
 mkdir --parents $HOME/.config/redshift
+mkdir --parents $HOME/.config/nixpkgs
 mkdir --parents $HOME/utils
 
 # BASH
@@ -48,3 +49,7 @@ ln --force --symbolic "$BASEDIR/redshift/redshift.conf" "$HOME/.config/redshift/
 # GPG
 echo "Creating gpg-related symlinks..."
 ln --force --symbolic "$BASEDIR/gpg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
+
+# NIX
+echo "Creating nixos-related symlinks..."
+ln --force --symbolic "$BASEDIR/nixos/nixpkgs/config.nix" "$HOME/.config/nixpkgs/config.nix"
