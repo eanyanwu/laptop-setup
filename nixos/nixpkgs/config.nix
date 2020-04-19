@@ -5,6 +5,7 @@
             sway-wm
             web-browser
             programming-tools
+            document-viewer
             bells-and-whistles
         ];
 
@@ -38,11 +39,27 @@
             ];
         };
 
+        # Document viewer
+        document-viewer = pkgs.buildEnv {
+            name = "document-viewer";
+            paths = [
+                pkgs.evince
+            ];
+        };
+
         # Web broswer
         web-browser = pkgs.buildEnv {
             name = "web-browser";
             paths = [
                 pkgs.firefox-wayland
+            ];
+        };
+
+        # Backups
+        backups = pkgs.buildEnv {
+            name = "backups";
+            paths = [
+                pkgs.rsync
             ];
         };
     };

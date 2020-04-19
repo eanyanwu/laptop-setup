@@ -11,6 +11,7 @@
     [ 
       ./hardware-configuration.nix
       ./system-packages.nix
+      ./systemd.nix
       ./environment.nix
       ./networking.nix
       ./fonts.nix

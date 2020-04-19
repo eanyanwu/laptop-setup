@@ -53,3 +53,7 @@ ln --force --symbolic "$BASEDIR/gpg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf
 # NIX
 echo "Creating nixos-related symlinks..."
 ln --force --symbolic "$BASEDIR/nixos/nixpkgs/config.nix" "$HOME/.config/nixpkgs/config.nix"
+
+# GIT
+echo "Creating git-related symlinks..."
+ln --force --symbolic "$BASEDIR/git/.gitconfig" "$HOME/.gitconfig"
