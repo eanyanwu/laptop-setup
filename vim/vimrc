@@ -4,6 +4,9 @@ let mapleader = "\<Space>"
 " Set local leader 
 let maplocalleader = "\<Space>"
 
+" Backspace doesn't quite work on windows out of the box. 
+set backspace=indent,eol,start
+
 """"""""""""""""""""""""""""
 " DISPLAY RELATED SETTINGS "
 """"""""""""""""""""""""""""
