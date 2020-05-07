@@ -4,6 +4,9 @@ let mapleader = "\<Space>"
 " Set local leader 
 let maplocalleader = "\<Space>"
 
+" Backspace doesn't quite work on windows out of the box. 
+set backspace=indent,eol,start
+
 """"""""""""""""""""""""""""
 " DISPLAY RELATED SETTINGS "
 """"""""""""""""""""""""""""
@@ -50,7 +53,7 @@ let g:netrw_liststyle=3
 """"""""""""""""""""""
 
 " Use the more sane j, k, l, ; keys to navigate
-noremap ; l 
+noremap ; l
 noremap l k
 noremap k j
 noremap j h
