@@ -23,6 +23,10 @@
 
     boot.cleanTmpDir = true;
 
+# Persistent hardware-related changes
+    hardware.brightnessctl.enable = true;
+    hardware.opengl.enable = true;
+
 # User Management
     security.sudo.wheelNeedsPassword = false;
 
