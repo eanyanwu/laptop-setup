@@ -24,7 +24,7 @@ set laststatus=2
 set ruler
 
 " Don't show relative line numbers
-set norelativenumber
+set relativenumber
 
 " Support for 256-color scheme?
 set termguicolors
@@ -34,64 +34,26 @@ set autoindent
 set smartindent
 
 " Tabs and spaces
-" See https://stackoverflow.com/a/1878983
-set tabstop=8
-set softtabstop=0
+set tabstop=4
+set softtabstop=4
+" How many columns does the shift command indent
 set shiftwidth=4
+" I always want spaces, no tabs.
 set expandtab
+" Use shiftwidth to determine how many spaces to use
 set smarttab
 
 " File browser settings
-
 set autochdir
 let g:netrw_banner=0
-let g:netrw_winsize=25
-let g:netrw_liststyle=3
+let g:netrw_liststyle=1
+let g:netrw_alto=1
+let g:netrw_altv=1
+let g:netrw_sort_by="exten"
 
 """"""""""""""""""""""
 " CUSTOM KEYBINDINGS "
 """"""""""""""""""""""
-
-" Use the more sane j, k, l, ; keys to navigate
-noremap ; l
-noremap l k
-noremap k j
-noremap j h
-
-" Move between open windows
-nnoremap <C-m>; <C-w>l
-nnoremap <C-m>l <C-w>k
-nnoremap <C-m>k <C-w>j
-nnoremap <C-m>j <C-w>h
-
-" Window Resizing
-nnoremap <leader>ih :resize +15<cr>
-nnoremap <leader>dh :resize -15<cr>
-nnoremap <leader>iw :vertical :resize +15<cr>
-nnoremap <leader>dw :vertical :resize -15<cr>
-
-" Window layout
-noremap <C-w>; <C-w>L
-noremap <C-w>l <C-w>K
-noremap <C-w>k <C-w>J
-noremap <C-w>j <C-w>H
-
-" Map the - key to: Delete the current line, then paste it below the one we're
-" on now. 
-nnoremap <leader>- ddp
-
-" Same as above, except the other way around
-" We kill the line, go up one and put it before the cursor. Since the line
-" kill has a carriage return after it, it will push down whatever is in that
-" line.
-nnoremap <leader>_ ddkP
-
-
-" This is some practice text
-
-" Open new line without going into insert mode
-nnoremap <leader>o o<esc>k
-nnoremap <leader>O O<esc>j
 
 " Disable the <esc> key in Input mode.
 inoremap <C-c> <esc>
@@ -100,21 +62,11 @@ inoremap <esc> <nop>
 " Change the omni key for ft_sql so it doesn't clash
 let g:ftplugin_sql_omni_key = '<C-j>'
 
-
-" Switch to buffer
-nnoremap <leader>b :buffers<cr>:buffer<space>
-
 " Open the .vimrc flie from anywhere in normal mode
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " Source the .vimrc file from anywhere in normal mode
 nnoremap <leader>sv :source $MYVIMRC<cr>
-
-" Save - typing :w is not the easiest.
-nnoremap <leader>ww :w<cr>
-
-"Exit terminal mode
-tnoremap <Esc> <C-\><C-n>
 
 """""""""""""""""
 " AUTO COMMANDS "
@@ -129,7 +81,7 @@ augroup python_files
     autocmd FileType python :setlocal tabstop=4
     autocmd FileType python :setlocal softtabstop=4
     autocmd FileType python :setlocal shiftwidth=4
-    autocmd FileType python :setlocal textwidth=79
+    autocmd FileType python :setlocal textwidth=100
     autocmd FileType python :setlocal expandtab
     autocmd FileType python :setlocal autoindent
     autocmd FileType python :setlocal fileformat=unix
@@ -138,6 +90,22 @@ augroup END
 augroup rust_files
     "Autocommands for rust files
     autocmd!
+    autocmd FileType rust :setlocal textwidth=100
+augroup END
 
-    autocmd FileType rust :setlocal textwidth=79
+augroup javascript_files
+    "Autocommands for javascript files
+    autocmd!
+    autocmd FileType javascript,json :setlocal tabstop=2
+    autocmd FileType javascript,json :setlocal softtabstop=2
+    autocmd FileType javascript,json :setlocal shiftwidth=2
+    autocmd FileType javascript,json :setlocal expandtab
+    autocmd FileType javascript,json :setlocal autoindent
+    autocmd FileType javascript,json :setlocal textwidth=100
+augroup END
+
+augroup makefiles
+    "Autocommands for makefiles
+    autocmd!
+    autocmd FileType make :setlocal noexpandtab
 augroup END
